@@ -1,5 +1,6 @@
 <?php
 
+use App\Services\Apple\Providers\AppleServiceProvider;
 use Illuminate\Support\Facades\Facade;
 
 return [
@@ -194,6 +195,11 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        /*
+         * 3rd Party Service Providers...
+         */
+        AppleServiceProvider::class,
 
     ],
 

@@ -1,5 +1,6 @@
 <?php
 
+use App\Domains\Songs\Controllers\SongController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/itunes-song', [SongController::class, 'show']);
